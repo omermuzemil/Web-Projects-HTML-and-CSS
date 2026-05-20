@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: #fcf2e1;
+    position: relative;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.star-icon{
+    fill: currentColor;
+    color: rgb(174, 176, 176);
+    width: 80px;
+    height: 80px;
+}
+
+.star-icon:hover{
+    color: gold;
+}
+
+.reactions div{
+    display: none;
+    color: gold;
+    font-size: 34px;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 580px;
+}
+
+input{
+    display: none;
+}
+
+/* 1 star */
+#one-star:checked ~ .container label .one-star,
+
+/* 2 stars */
+#two-stars:checked ~ .container label .one-star,
+#two-stars:checked ~ .container label .two-stars,
+
+/* 3 stars */
+#three-stars:checked ~ .container label .one-star,
+#three-stars:checked ~ .container label .two-stars,
+#three-stars:checked ~ .container label .three-stars,
+
+/* 4 stars */
+#four-stars:checked ~ .container label .one-star,
+#four-stars:checked ~ .container label .two-stars,
+#four-stars:checked ~ .container label .three-stars,
+#four-stars:checked ~ .container label .four-stars,
+
+/* 5 stars */
+#five-stars:checked ~ .container label .one-star,
+#five-stars:checked ~ .container label .two-stars,
+#five-stars:checked ~ .container label .three-stars,
+#five-stars:checked ~ .container label .four-stars,
+#five-stars:checked ~ .container label .five-stars{
+    color: gold;
+}
+
+#one-star:checked ~ .reactions .one-star-reaction{
+    display: block;
+}
+
+#two-stars:checked ~ .reactions .two-stars-reaction{
+    display: block;
+}
+
+#three-stars:checked ~ .reactions .three-stars-reaction{
+    display: block;
+}
+
+#four-stars:checked ~ .reactions .four-stars-reaction{
+    display: block;
+}
+
+#five-stars:checked ~ .reactions .five-stars-reaction{
+    display: block;
+}
+

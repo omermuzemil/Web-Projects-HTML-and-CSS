@@ -1,0 +1,96 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 310px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 10px 0 silver;    
+}
+
+.upper-box{
+    width: 100%;
+    height: 100px;
+    background-color: #4070f4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border: .3rem solid #4070f4;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.text p{
+    margin: 5px;
+    text-align: center;
+}
+
+.icons img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: #4070f4;
+    justify-content: center;
+}
+
+.interaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.interaction img{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.icons img, .buttons .btn, .interaction img:hover{
+    cursor: pointer;
+}
+

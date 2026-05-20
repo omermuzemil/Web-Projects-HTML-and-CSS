@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #8e44ad;
+}
+
+.container{
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.container .card{
+    display: flex;
+    /* flex: 1 1 300px;
+    max-width: 320px; */
+    align-items: center;
+    flex-direction: column;
+    width: calc(33% - 10px);
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.card .image{
+    width: 150px;
+    height: 150px;
+}
+
+.card .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    outline: 3px solid #8e44ad;
+    border: 2px solid #fff;
+}
+
+.card span{
+    padding: 15px 0 5px 0;
+    font-size: 18px;
+    color: #8e44ad;
+    font-weight: 800;
+}
+
+.card .icon{
+    width: 20px;
+    height: 20px;
+    color: #8e44ad;
+}
+
+.card .filled-icon{
+    fill: #8e44ad;
+}
+.card p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons .button{
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    outline: none;
+    border: 2px solid #8e44ad;
+    background: #fff;
+    color: #8e44ad;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.buttons .filled-button{
+    background: #8e44ad;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.buttons .button:hover{
+    background: #8e44ad;
+    color: #fff;
+}
+

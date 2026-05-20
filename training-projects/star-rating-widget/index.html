@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wscale=1.0">
+    <title>Star Rating Widget | @CodingWithPython</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="radio" name="rating" id="one-star">
+    <input type="radio" name="rating" id="two-stars">
+    <input type="radio" name="rating" id="three-stars">
+    <input type="radio" name="rating" id="four-stars">
+    <input type="radio" name="rating" id="five-stars">
+    <div class="container">
+        <label for="one-star">
+            <svg class="star-icon one-star">
+                <use xlink:href="sprite.svg#filled-star"></use>
+            </svg>       
+        </label>
+        <label for="two-stars">
+            <svg class="star-icon two-stars">
+                <use xlink:href="sprite.svg#filled-star"></use>
+            </svg>
+        </label>
+        <label for="three-stars">
+            <svg class="star-icon three-stars">
+                <use xlink:href="sprite.svg#filled-star"></use>
+            </svg>
+        </label>            
+        <label for="four-stars">
+            <svg class="star-icon four-stars">
+                <use xlink:href="sprite.svg#filled-star"></use>
+            </svg>
+        </label>
+        <label for="five-stars">
+            <svg class="star-icon five-stars">
+                <use xlink:href="sprite.svg#filled-star"></use>
+            </svg>
+        </label>
+    </div>
+    <div class="reactions">
+        <div class="one-star-reaction"><span>I hate it</span>😠</div>
+        <div class="two-stars-reaction"><span>I don't like it</span>😒</div>
+        <div class="three-stars-reaction"><span>It's good</span>😄</div>
+        <div class="four-stars-reaction"><span>I like it</span>😎</div>
+        <div class="five-stars-reaction"><span>I love it</span>😍</div>
+    </div>
+</body>
+</html>

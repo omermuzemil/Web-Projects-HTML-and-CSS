@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Task Bar | @CodingWithPython</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="slider" id="home" checked>
+        <input type="radio" name="slider" id="blog">
+        <input type="radio" name="slider" id="code">
+        <input type="radio" name="slider" id="help">
+        <input type="radio" name="slider" id="about">
+        <nav>
+            <div class="slider"></div>
+            <label for="home" class="home">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#home"></use>
+                </svg>Home
+            </label>
+            <label for="blog" class="blog">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#blog-solid-full"></use>
+                </svg>Blog
+            </label>
+            <label for="code" class="code">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#code"></use>
+                </svg>Code
+            </label>
+            <label for="help" class="help">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#email"></use>
+                </svg>Help
+            </label>
+            <label for="about" class="about">
+                <svg class="icon">
+                    <use xlink:href="images/sprite.svg#user"></use>
+                </svg>About
+            </label>
+        </nav>
+    </div>
+</body>
+</html>
